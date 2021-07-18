@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+	background: #105B7B url("../img/bg-dent-full.jpg") 50%/cover no-repeat;
+	min-height: 100vh;
+	}
+
+.border-top {
+	display: flex;
+}
+
+.border1,
+.border2,
+.border3 {
+  height: 10px;
+  width: calc(100%/3);
+}
+
+.border1 {
+  background: #02B8BF;
+}
+
+.border2 {
+  background: #1990CE;
+}
+
+.border3 {
+  background: #07BC83;
+}
+
+.coming-soon {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.coming-soon h2 {
+	font-size: 42px;
+	line-height: 50px;
+	font-weight: 400;
+	margin: 0 0 30px 0;
+	padding: 0 10px;
+	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.appointment-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.appointment {
+	text-align: left;
+}
+
+.appointment p {
+	margin: 0;
+	padding: 0 0 0 25px;
+	position: relative;
+}
+
+.appointment a {
+	display: block;
+	/* padding: 0 0 0 25px; */
+	margin: 0 0 10px 0;
+
+}
+
+.appointment a:first-child::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 19px;
+	height: 19px;
+	background: url("../img/phone-icon.svg") 0 0 no-repeat;
+}
+
+.address::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 19px;
+	height: 19px;
+	background: url("../img/map-location-icon1.svg") 0 0 no-repeat;
+}
+
+.main-logo {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+	margin: 0 0 20px 0;
+}
+
+.main-logo span {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.main-logo span:nth-child(2) {
+  color: #02B8BF;
+}
+
+.main-logo span:nth-child(3) {
+  color: #1990CE;
+}
+
+.main-logo span:nth-child(4) {
+  color: #07BC83;
+}
+
+.appointment__phone{
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.appointment__phone:focus,
+.appointment__phone:hover {
+  color: #02B8BF;
+}
+
