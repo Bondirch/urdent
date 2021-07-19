@@ -50,7 +50,7 @@ body {
 	font-size: 42px;
 	line-height: 50px;
 	font-weight: 400;
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
 	padding: 0 10px;
 	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
 }
@@ -68,7 +68,7 @@ body {
 
 .appointment p {
 	margin: 0;
-	padding: 0 0 0 25px;
+	padding: 30px 0 0 25px;
 	position: relative;
 }
 
@@ -102,7 +102,7 @@ body {
   line-height: 36px;
   font-weight: 400;
 	text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
-	margin: 0 0 20px 0;
+	margin: 0;
 }
 
 .main-logo span {
