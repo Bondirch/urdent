@@ -1,4 +1,4 @@
-body {
+.coming-soon-page {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
@@ -9,26 +9,24 @@ body {
 	min-height: 100vh;
 	}
 
-.border-top {
+.decorative-strip {
 	display: flex;
+	height: 10px;
 }
 
-.border1,
-.border2,
-.border3 {
-  height: 10px;
+.decorative-strip__item {
   width: calc(100%/3);
 }
 
-.border1 {
+.decorative-strip__item_left {
   background: #02B8BF;
 }
 
-.border2 {
+.decorative-strip__item_center {
   background: #1990CE;
 }
 
-.border3 {
+.decorative-strip__item_right {
   background: #07BC83;
 }
 
@@ -73,10 +71,15 @@ body {
 }
 
 .appointment a {
-	display: block;
-	/* padding: 0 0 0 25px; */
+	font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+	display: inline-block	;
 	margin: 0 0 10px 0;
+}
 
+.appointment a:hover {
+	color: #02B8BF;
 }
 
 .appointment a:first-child::before {
@@ -94,10 +97,10 @@ body {
 	left: 0px;
 	width: 19px;
 	height: 19px;
-	background: url("../img/map-location-icon1.svg") 0 0 no-repeat;
+	background: url("../img/map-location-icon.svg") 0 0 no-repeat;
 }
 
-.main-logo {
+.logo {
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
@@ -105,32 +108,20 @@ body {
 	margin: 0;
 }
 
-.main-logo span {
+.logo span {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 4px;
 }
 
-.main-logo span:nth-child(2) {
+.logo span:nth-child(2) {
   color: #02B8BF;
 }
 
-.main-logo span:nth-child(3) {
+.logo span:nth-child(3) {
   color: #1990CE;
 }
 
-.main-logo span:nth-child(4) {
+.logo span:nth-child(4) {
   color: #07BC83;
 }
-
-.appointment__phone{
-  font-weight: 400;
-  text-decoration: none;
-  color: inherit;
-}
-
-.appointment__phone:focus,
-.appointment__phone:hover {
-  color: #02B8BF;
-}
-
