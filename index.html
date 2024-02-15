@@ -1,58 +1,146 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стоматологічна клініка "Юрдентсервіс"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Стоматологічна клініка "Юрдентсервіс"</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <div class="decorative-strip">
-    <div class="decorative-strip__item decorative-strip__item_left"></div>
-    <div class="decorative-strip__item decorative-strip__item_center"></div>
-    <div class="decorative-strip__item decorative-strip__item_right"></div>
-  </div>
-  <header>
-    <div class="header-content">
+  <body>
+    <header class="page-header">
+      <div class="decorative-line"></div>
       <div class="container">
-        <div class="header-content__row">
-          <div class="header-content__logo">
-            <h1>
-              Стоматологічна клініка<br>
-              "<span>Юр</span><span>дент</span><span>сервіс</span>"
-            </h1>
+        <div class="page-header__content">
+          <div class="logo">
+            <a class="logo__link" href="./index.html">
+              <span class="logo__1st-part">Стоматологічна клініка</span>
+              <span class="logo__2nd-part">ЮР</span
+              ><span class="logo__3nd-part">ДЕНТ</span
+              ><span class="logo__4th-part">СЕРВІС</span>
+            </a>
           </div>
-          <div class="header-content__address">
-            <p>м. Ужгород,<br> вул. Заньковецької, 77</p>
-          </div>
-          <div class="header-content__appointment">
-              <p>Запис на прийом:<br>
-                <a class="header-content__phone-link" href="tel:+380509389238">+380 (50) 938 92 38</a><br>
-                <a class="header-content__phone-link" href="tel:+380312653764">+380 (312) 65 37 64</a>
-              </p>
-          </div>
+          <address class="contacts">
+            <p class="contacts__address">
+              м. Ужгород,<br />
+              вул. Заньковецької, 77
+            </p>
+            <p class="contacts__appointment">
+              Запис на прийом:<br />
+              <a class="contacts__phone-link" href="tel:+380509389238"
+                >+380 (50) 938 92 38</a
+              ><br />
+              <a class="contacts__phone-link" href="tel:+380312653764"
+                >+380 (312) 65 37 64</a
+              >
+            </p>
+          </address>
         </div>
       </div>
-    </div>
-    <div class="menu">
-      <div class="container">
-        <nav class="menu__items">
+      <nav class="menu">
+        <div class="container">
           <ul class="menu__list">
-            <li><a href="#" class="menu__link">Головна</a></li>
-            <li><a href="#" class="menu__link">Про нас</a></li>
-            <li><a href="#" class="menu__link">Послуги</a></li>
-            <li><a href="#" class="menu__link">Прайс-лист</a></li>
-            <li><a href="#" class="menu__link">Контакти</a></li>
-            <li><a href="https://karpaty3d.com/listing/uzhgorod-stomatologichna-klinika-yurdentservis/" class="menu__link">3D тур</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link link">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link link">Послуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link link">Прайс-лист</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link link">Контакти</a>
+            </li>
+            <li>
+              <a
+                href="https://karpaty3d.com/listing/uzhgorod-stomatologichna-klinika-yurdentservis/"
+                class="menu__link link"
+                >3D тур</a
+              >
+            </li>
           </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-</body>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      <section class="hero"></section>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title">Про нас</h2>
+          <div class="about__row">
+            <div class="decorative-colums-line"></div>
+            <div class="about__colums">
+              <h3 class="about__subtitle subtitle">Хто ми?</h3>
+              <p>
+                "Юрдентсервіс" — сучасна стоматологічна клініка яка надає повний
+                комплекс професійної стоматологічної допомоги для усієї родини.
+                Вже понад 10 років ми робимо Вашу посмішку красивішою!
+              </p>
+              <p>
+                Наші лікарі — професіонали найвищого рівня. Загалом в клініці
+                працює близько 8 висококваліфікованих спеціалістів. Кожен з них
+                є сертифікованим фахівцем. Вони зроблять все для того, щоб
+                зробити Ваше перебування в клініці комфортнішим.
+              </p>
+              <p>
+                Кожен пацієнт є унікальним, і до кожного Ми знайдемо підхід!
+              </p>
+            </div>
+            <div class="about__colums">
+              <h3 class="about__subtitle subtitle">Чому саме ми?</h3>
+              <p>
+                Кабінети в клініці оснащені сучасними багатофункціональним, а
+                головне комфортними установками для Наших пацієнтів. Ми
+                розуміємо, що не всім зручно відвідувати стоматологів, але
+                прагнемо зробити Ваш візит якомога більш приємним.
+              </p>
+              <p>
+                Щоб забезпечити найкраще лікування, ми використовуємо
+                найсучасніші, інноваційні та ефективні клінічно перевірені
+                матеріали, обладнання та методи.
+              </p>
+              <p>
+                Довірте Нам свою посмішку, а Ми зробимо все, щоб Ви були
+                задоволені результатом.
+              </p>
+            </div>
+          </div>
+          <div class="activities">
+            <h3 class="activities__title subtitle">Чим ми займаємося?</h3>
+            <ul class="activities__list">
+              <li class="activities__item">
+                <p>Терапевтична стоматологія</p>
+                <div class="activities__img"></div>
+              </li>
+              <li class="activities__item">
+                <p>Ортопедична стоматологія</p>
+                <div class="activities__img"></div>
+              </li>
+              <li class="activities__item">
+                <p>Хірургічна стоматологія</p>
+                <div class="activities__img"></div>
+              </li>
+              <li class="activities__item">
+                <p>Дитяча стоматологія</p>
+                <div class="activities__img"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

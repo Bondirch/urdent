@@ -1,0 +1,261 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-header {
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.decorative-line {
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(2, 184, 191) 0%,
+    rgb(2, 184, 191) 33%,
+    rgb(25, 144, 206) 33%,
+    rgb(25, 144, 206) 67%,
+    rgb(7, 188, 131) 67%,
+    rgb(7, 188, 131) 100%
+  );
+}
+
+.page-header__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 230px;
+  padding-top: 4px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.logo__link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.133em;
+  color: #116089;
+}
+.logo__1st-part {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
+.logo__2nd-part {
+  color: #02b8bf;
+}
+
+.logo__3nd-part {
+  color: #1990ce;
+}
+
+.logo__4th-part {
+  color: #07bc83;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  font-style: normal;
+  color: #116089;
+}
+
+.contacts__address {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+.contacts__address::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/address/map-location-icon.svg) 0 0 no-repeat;
+}
+
+.contacts__appointment {
+  position: relative;
+  padding-left: 25px;
+  font-weight: 700;
+}
+.contacts__appointment::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/address/phone-icon.svg) 0 0 no-repeat;
+}
+.contacts__phone-link {
+  font-weight: 400;
+  color: inherit;
+  letter-spacing: 0.25px;
+  transition-duration: 0.5s;
+}
+.contacts__phone-link:hover,
+.contacts__phone-link:focus {
+  color: #02b8bf;
+}
+
+.menu {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #f2f2f2;
+}
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 25px;
+}
+.menu__link {
+  color: #666666;
+  transition-duration: 0.5s;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: #02b8bf;
+}
+
+.about {
+  color: #666666;
+}
+.about__title {
+  margin-bottom: 100px;
+}
+
+.about__row {
+  display: flex;
+  margin: 0 -30px;
+  padding: 0 30px;
+  position: relative;
+}
+.about .decorative-colums-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  height: 100%;
+  border-right: 1px solid rgba(196, 196, 196, 0.5);
+}
+.about__colums {
+  flex: 0 1 50%;
+  padding: 0 30px;
+}
+.title {
+  position: relative;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #02b8bf;
+}
+.title::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 150%;
+  left: calc((100% - 15px) / 2);
+  background-color: #02b8bf;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  color: #02b8bf;
+}
+
+.activities {
+  padding: 0 30px;
+}
+.activities__title {
+  text-align: center;
+}
+.activities__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.activities__item {
+  flex: 0 1 25%;
+  text-align: center;
+  list-style: none;
+}
+.activities__item p {
+  font-size: 18px;
+  width: 156px;
+  margin: 0 auto;
+}
+.activities__img {
+  width: 156px;
+  height: 156px;
+  margin: 16px auto 0px;
+  border: 5px solid #02b8bf;
+  border-radius: 50% 50%;
+}
+.activities__item:nth-child(1) .activities__img {
+  background: url(../images/about/therapeutic.png) center no-repeat;
+}
+.activities__item:nth-child(2) .activities__img {
+  background: url(../images/about/orthopedic.png) center no-repeat;
+}
+.activities__item:nth-child(3) .activities__img {
+  background: url(../images/about/surgical.png) center no-repeat;
+}
+.activities__item:nth-child(4) .activities__img {
+  background: url(../images/about/pediatric.png) center no-repeat;
+}
