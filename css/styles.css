@@ -32,15 +32,15 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .page-header {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-color: #ffffff;
 }
 
@@ -57,17 +57,15 @@ body {
   );
 }
 
-.page-header__content {
+.page-header__container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .logo {
-  width: 230px;
-  padding-top: 4px;
-  margin-right: 10px;
+  max-width: 230px;
   text-align: center;
 }
 
@@ -97,8 +95,9 @@ body {
 }
 
 .contacts {
-  width: 100%;
+  width: calc(100% - 230px);
   display: flex;
+  align-items: center;
   font-style: normal;
   color: #116089;
 }
@@ -107,15 +106,13 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 8px;
   padding-left: 25px;
-  padding-right: 10px;
 }
 .contacts__address::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 2px;
   width: 20px;
   height: 20px;
   background: url(../images/address/map-location-icon.svg) 0 0 no-repeat;
@@ -147,18 +144,20 @@ body {
 }
 
 .menu {
-  padding-top: 14px;
-  padding-bottom: 14px;
   background-color: #f2f2f2;
 }
+
 .menu__list {
   display: flex;
 }
 
-.menu__item {
+.menu__item:not(:last-child) {
   margin-right: 25px;
 }
 .menu__link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
   color: #666666;
   transition-duration: 0.5s;
 }
@@ -166,6 +165,41 @@ body {
 .menu__link:hover,
 .menu__link:focus {
   color: #02b8bf;
+}
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hero__list {
+  display: flex;
+}
+
+.hero__item {
+  width: 100%;
+}
+
+.hero__item:nth-child(1) {
+  background-color: #02b8bf;
+}
+
+.hero__item:nth-child(2) {
+  background-color: #1990ce;
+}
+
+.hero__item:nth-child(3) {
+  background-color: #07bc83;
+}
+
+.hero__text {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.15;
+  color: #f2f2f2;
+  text-align: center;
 }
 
 .about {
